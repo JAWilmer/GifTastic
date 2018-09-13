@@ -1,1 +1,86 @@
+/* dark green: #48694E */
+/* medium green: #5B7E60 */
+/* pale green: #749779 */
+/* light tan: #ebe8e3 */
+/* tan: #C0B7A8 */
+/* grey brown: #433E38 */
 
+
+body {
+        background-image: url('../images/Bourrée_d\'Auvergne_croppped.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #433E38;
+}
+
+.container {    
+    padding-top: 1%;
+    background-color: transparent;
+    width: 75%;
+}
+
+.jumbotron {
+    background-color: #433E38;
+    color: #C0B7A8 ;
+    padding: 3%;
+    text-align: center;
+}
+
+.card {
+    background-color: #C0B7A8;
+    border-color:  #433E38;
+    padding: 4%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.buttonArea {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 2%;
+}
+
+.danceButton { 
+    background-color: #749779;
+    border-color: #48694E;
+    color: #48694E;
+    margin: 1%;
+    font-weight: bolder;
+}
+
+label {
+    padding: 1.5% 0 0 0.5%;
+    float: left;
+}
+
+#danceName {
+    border-color: #433E38;
+    background-color: #ebe8e3;
+}
+
+.add {
+    background-color: #433E38;
+    color: #ebe8e3;
+    border-color: #ebe8e3;
+    float: left;
+}
+
+.display{
+  overflow: auto;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+#png {
+    float: right;
+    margin-top: 5%;
+    width: 15%;
+    height: auto;
+}
