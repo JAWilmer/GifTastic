@@ -21,7 +21,7 @@ $(document).ready(function () {
     function showGif() {
         let name = $(this).data("name");
         console.log('Showing gifs for ' + name);
-        let myUrl = 'https://api.giphy.com/v1/gifs/search?q=' + name + '&api_key=VN9bhx3YOEw3Iu4ivi7A9736JkoLUKQh';
+        let myUrl = 'https://api.giphy.com/v1/gifs/search?q=' + name + '&api_key=Yt6V2WgjwgQMQApBqVERs6SnSUhxtVMg'; 
         // AJAX call for dance button clicked
         $.ajax({
             url: myUrl,
@@ -64,19 +64,20 @@ $(document).ready(function () {
     }
 
     //Function: Add new dance button on click
-    $('.add').click(function (event) {
-        //Prevent default behaviour of submit[add] button
-        event.preventDefault();
+    $('.add').click(function () {
         let name = $('#danceName').val().trim();
         if (name != "") {
             console.log('New button to be added:' + name);
             dances.push(name);
             $('#danceName').val("");
             renderButtons();
+            //  WHY WON'T THIS WORK?
+            // $("h2").html(name);
+            //
         }
     });
 
-    // FunctionL Change state of animation on click
+    // Function: Change state of animation on click
     function changeState() {
         console.log('Changing my state...');
         let state = $(this).data('state');
