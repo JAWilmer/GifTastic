@@ -1,3 +1,4 @@
+/* COLORS */
 /* dark green: #48694E */
 /* medium green: #5B7E60 */
 /* pale green: #749779 */
@@ -7,16 +8,22 @@
 
 
 body {
-        background-image: url('../images/Bourrée_d\'Auvergne_croppped.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #433E38;
+    color: #433E38;
+    background: url("../images/Bourrée_d\'Auvergne_croppped.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .container {    
     padding-top: 1%;
     background-color: transparent;
     width: 75%;
+    height: 100%;
 }
 
 .jumbotron {
@@ -66,10 +73,11 @@ label {
 }
 
 .display{
-  overflow: auto;
   border: none;
   background-color: transparent;
   text-align: center;
+  overflow-y:scroll;
+  height: auto;
 }
 
 img {
