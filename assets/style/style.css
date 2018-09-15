@@ -11,33 +11,39 @@ body {
     color: #433E38;
     background: url("../images/Bourrée_d\'Auvergne_croppped.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+    background-size: cover;
+    background-color: #433E38;
     position: fixed; 
     top: 0; 
     left: 0; 
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .container {    
-    padding-top: 1%;
     background-color: transparent;
-    width: 75%;
-    height: 100%;
+    width: 65%;
+    max-height: 100%;
+    overflow: auto;
+    margin-top: 2%;
 }
 
 .jumbotron {
+    margin: auto;
     background-color: #433E38;
     color: #C0B7A8 ;
-    padding: 3%;
+    padding: 2%;
     text-align: center;
+    width: 70%;
+    
 }
 
 .card {
     background-color: #C0B7A8;
     border-color:  #433E38;
     padding: 4%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     text-align: center;
 }
 
@@ -76,7 +82,6 @@ label {
   border: none;
   background-color: transparent;
   text-align: center;
-  overflow-y:scroll;
   height: auto;
 }
 
