@@ -16,7 +16,7 @@ $(document).ready(function () {
         }
         console.log("Buttons rendered")
     }
-
+  
     //Function: show and control amimation of .gifs
     function showGif() {
         let name = $(this).data("name");
@@ -65,6 +65,7 @@ $(document).ready(function () {
 
     //Function: Add new dance button on click
     $('.add').click(function () {
+        event.preventDefault();
         let name = $('#danceName').val().trim();
         if (name != "") {
             console.log('New button to be added:' + name);
