@@ -16,19 +16,19 @@ $(document).ready(function () {
         }
         console.log("Buttons rendered")
     }
-  
-    //Function: show and control amimation of .gifs
+
+    //Function: show and control amimation of gifs
     function showGif() {
         let name = $(this).data("name");
         console.log('Showing gifs for ' + name);
-        let myUrl = 'https://api.giphy.com/v1/gifs/search?q=' + name + '&api_key=Yt6V2WgjwgQMQApBqVERs6SnSUhxtVMg'; 
+        let myUrl = 'https://api.giphy.com/v1/gifs/search?q=' + name + '&api_key=Yt6V2WgjwgQMQApBqVERs6SnSUhxtVMg';
         // AJAX call for dance button clicked
         $.ajax({
             url: myUrl,
             method: 'GET'
         }).done(
             function (response) {
-                console.log('Retrieved .gifs for ' + name);
+                console.log('Retrieved gifs for ' + name);
                 let data = response.data;
                 //Empty div before adding more gifs
                 $('.display').empty();
@@ -53,12 +53,12 @@ $(document).ready(function () {
                         // Display ratings for .gifs
                         let rating = data[i].rating;
                         let displayRated = $('<h5>').text("Rating: " + rating);
-                        $(imgBox).prepend(displayRated);
+                        $(imgBox).append(displayRated);
                     }
                 }
+                $("h4").html("Groove with the   " + name + "!");
                 $('html, body').animate({
-                    scrollTop: $(".display").offset().top
-                }, 1000);
+                });
             }
         );
     }
@@ -72,9 +72,6 @@ $(document).ready(function () {
             dances.push(name);
             $('#danceName').val("");
             renderButtons();
-            //  WHY WON'T THIS WORK?
-            // $("h2").html(name);
-            //
         }
     });
 
