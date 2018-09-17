@@ -56,7 +56,8 @@ $(document).ready(function () {
                         $(imgBox).append(displayRated);
                     }
                 }
-                $("h4").html("Groove with the   " + name + "!");
+                $("h4.grove").html("Groove with the   " + name + "!");
+                $("h6.grove").html("Click each gif for animation.");
                 $('html, body').animate({
                 });
             }
